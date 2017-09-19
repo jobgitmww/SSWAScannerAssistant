@@ -2,9 +2,9 @@ applications:
 - path: .
   memory: 512M
   instances: 1
-  domain: mybluemix.net
-  name: demo42
-  host: demo42
+  domain: eu-gb.mybluemix.net
+  name: HIKECScannerAssistant
+  host: HIKECScannerAssistant
   disk_quota: 1024M
   services:
-  - demo42-cloudantNoSQLDB
+  - HIKECScannerAssistant-cloudantNoSQLDB
