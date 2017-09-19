@@ -79,9 +79,13 @@
                 console.info(data);
                 if(data.intents[0] == undefined){
                     addMessage(data.output.text, 'left', "#anything_else");
+                    var msg = new SpeechSynthesisUtterance(data.output.text);
+                    window.speechSynthesis.speak(msg);
                 }
                 else{
                     addMessage(data.output.text, 'left', data.intents[0].intent);
+                    var msg = new SpeechSynthesisUtterance(data.output.text);
+                    window.speechSynthesis.speak(msg);
                 }
             },
             error:function(XMLHttpRequest,status,error){
@@ -166,6 +170,8 @@
     
                     context = data.context;
                     addMessage(data.output.text, 'left');
+                    var msg = new SpeechSynthesisUtterance(data.output.text);
+                    window.speechSynthesis.speak(msg);
     
                 },
                 error:function(XMLHttpRequest,status,error){
