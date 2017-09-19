@@ -103,7 +103,7 @@ body {
 }
 
 .messages .message.left .avatar:before {
-  content: 'W';
+  content: 'S';
   color: RGBA(255, 255, 255, 0.70);
   display: flex;
   justify-content: center;
@@ -114,20 +114,20 @@ body {
 }
 
 .messages .message.left .avatar {
-  background-color: RGBA(22, 177, 236, 1.0);
+  background-color: RGBA(226, 102, 2, 1.0);
   float: left;
 }
 
-.messages .message.left .text_wrapper {
-  background-color: RGBA(22, 177, 236, 0.80);
-  margin-left: 20px;
-}
+    .messages .message.left .text_wrapper {
+        background-color: RGBA(226, 102, 2, 0.80);
+        margin-left: 20px;
+    }
 
-.messages .message.left .text_wrapper::after,
-.messages .message.left .text_wrapper::before {
-  right: 100%;
-  border-right-color: RGBA(22, 177, 236, 0.80);
-}
+        .messages .message.left .text_wrapper::after,
+        .messages .message.left .text_wrapper::before {
+            right: 100%;
+            border-right-color: RGBA(226, 102, 2, 0.80);
+        }
 
 .messages .message.left .text {
   color: #fff;
