@@ -72,10 +72,11 @@
             dataType: 'json',
             success:function(data){
                 context = data.context;
-                if (voice) {
+                /*if (voice) {
                     var msg = new SpeechSynthesisUtterance(data.output.text);
                     window.speechSynthesis.speak(msg);
                 }
+                */
                 console.info(data);
                 if(data.intents[0] == undefined){
                     addMessage(data.output.text, 'left', "#anything_else");
