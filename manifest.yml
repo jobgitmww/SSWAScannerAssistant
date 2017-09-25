@@ -3,8 +3,8 @@ applications:
   memory: 512M
   instances: 1
   domain: eu-gb.mybluemix.net
-  name: HIKECScannerAssistant
-  host: HIKECScannerAssistant
+  name: SSWAScannerAssistant
+  host: SSWSAScannerAssistant
   disk_quota: 1024M
   services:
-  - HIKECScannerAssistant-cloudantNoSQLDB
+  - SSWAScannerAssistant-cloudantNoSQLDB
